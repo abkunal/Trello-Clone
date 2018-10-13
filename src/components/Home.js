@@ -54,12 +54,14 @@ class Home extends Component {
     let addFormMsg = this.state.showBoardForm ? (
       <AddBoard cancel={this.toggleShowBoardForm} />
     ) : (
+      <div className="col s12 m6 l4">
         <div onClick={this.toggleShowBoardForm} style={{ cursor: 'pointer' }}
-          className="card col s4 teal darken-4 white-text">
+          className="card teal darken-4 white-text">
           <div className="card-content center">
             <div className="card-title">Create a new Board...</div>
           </div>
         </div>
+      </div>
       );
 
     return (

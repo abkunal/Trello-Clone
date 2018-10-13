@@ -33,18 +33,20 @@ class AddBoard extends Component {
 
   render() {
     return (
-      <div className="card col s4 blue darken-2 white-text">
-        <h5 className="center">Board Name</h5>
-        <form onSubmit={this.handleForm} className="center addBoardForm">
-          <div className="input-field center">
-            <input autoFocus id="boardName" type="text" className="center white-text" onChange={this.handleChange} value={this.state.input} />
-          </div>
-          <span className="center">{this.state.error}</span>
-          <div>
-            <button type="button" onClick={this.props.cancel} className="btn white black-text center col offset-s1 s4">Cancel</button>
-            <button type="submit" className="btn white black-text center col offset-s2 s4">Add Board</button>
-          </div>
-        </form>
+      <div className="col s12 m6 l4">
+        <div className="card col m6 l4 s12 blue darken-2 white-text">
+          <h5 className="center">Board Name</h5>
+          <form onSubmit={this.handleForm} className="center addBoardForm">
+            <div className="input-field center">
+              <input autoFocus id="boardName" type="text" className="center white-text" onChange={this.handleChange} value={this.state.input} />
+            </div>
+            <span className="center">{this.state.error}</span>
+            <div>
+              <button type="button" onClick={this.props.cancel} className="btn white black-text center col offset-s1 s4">Cancel</button>
+              <button type="submit" className="btn white black-text center col offset-s2 s4">Add Board</button>
+            </div>
+          </form>
+        </div>
       </div>
     );
   }

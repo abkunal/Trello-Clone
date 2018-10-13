@@ -21,7 +21,7 @@ const List = (props) => {
     );
 
   return (
-    <div className="col s4">
+    <div className="col l4 m6 s12">
       <div className="card">
         <div className="card-content">
           <div className="card-title center">

@@ -14,7 +14,7 @@ const SingleBoard = (props) => {
       return (
         <div>
           <div className="row">
-            <div className="col s4">
+            <div className="col s12 m6 l4">
             <div className="card blue white-text">
               <div className="card-content">
                 <div className="card-title center">

@@ -34,22 +34,25 @@ class AddList extends Component {
 
   render() {
     return (
-      <div className="card col s4 blue darken-2 white-text">
-        <div className="card-content">
-          <div className="card-title center">
-            Add a list
+      <div className="col s12 m6 l4">
+        <div className="card blue darken-2 white-text">
+          <div className="card-content">
+            <div className="card-title center">
+              Add a list
           </div>
-          <form onSubmit={this.handleForm} className="center">
-            <div className="input-field center">
-              <input autoFocus type="text" className="center white-text" onChange={this.handleChange} value={this.state.input} />
-            </div>
-            <span className="center">{this.state.error}</span>
-            <div>
-              <button type="submit" className="btn white black-text center">Add</button>
-            </div>
-          </form>
+            <form onSubmit={this.handleForm} className="center">
+              <div className="input-field center">
+                <input autoFocus type="text" className="center white-text" onChange={this.handleChange} value={this.state.input} />
+              </div>
+              <span className="center">{this.state.error}</span>
+              <div>
+                <button type="submit" className="btn white black-text center">Add</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
+
     );
   }
 }

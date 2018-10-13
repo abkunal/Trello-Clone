@@ -35,7 +35,7 @@ class AddTask extends Component {
     return (
       <form onSubmit={this.handleForm} className="center">
         <div className="input-field">
-          <input type="text" className="center" onChange={this.handleChange} value={this.state.input} />
+          <input placeholder="Enter task" type="text" className="center" onChange={this.handleChange} value={this.state.input} />
         </div>
         <span className="red-text">{this.state.error}</span>
       </form>
